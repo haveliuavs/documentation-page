@@ -1,0 +1,47 @@
+site_name: Haveli Documentation 
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  markdown_extensions:
+    - attr_list
+    - md_in_html
+  plugins:
+    - glightbox
+  
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: lime
+      accent: cyan 
+    - scheme: slate 
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode    
+      primary: lime
+      accent: teal
+
+nav:
+  - Home: https://www.haveliuavs.com/
+  - Documentation: index.md
+  - Perception and Vision: Perception.md
+  - SLAM: 
+    - Introduction : SLAM.md
+    - VI-SLAM: 
+      - Visual SLAM: VI-SLAM.md
+      - Direct Sparse Odometry: DirectSparseOdometry.md
+    - Voxelization: Voxelization.md
+    - Datasets: Datasets.md
+  - Robot Operating System: RobotOperatingSystem.md
+  - Communities: Community.md
