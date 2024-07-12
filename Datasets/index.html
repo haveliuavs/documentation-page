@@ -1,0 +1,891 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Voxelization/">
+      
+      
+        <link rel="next" href="../RobotOperatingSystem/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Datasets - Haveli Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="lime" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#datasets-for-perception" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Haveli Documentation" class="md-header__button md-logo" aria-label="Haveli Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Haveli Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Datasets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="lime" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="lime" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://www.haveliuavs.com/" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Perception/" class="md-tabs__link">
+        
+  
+    
+  
+  Perception and Vision
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../SLAM/" class="md-tabs__link">
+          
+  
+  SLAM
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../RobotOperatingSystem/" class="md-tabs__link">
+        
+  
+    
+  
+  Robot Operating System
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Community/" class="md-tabs__link">
+        
+  
+    
+  
+  Communities
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Haveli Documentation" class="md-nav__button md-logo" aria-label="Haveli Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Haveli Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.haveliuavs.com/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Perception/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perception and Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    SLAM
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            SLAM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SLAM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    VI-SLAM
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            VI-SLAM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VI-SLAM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visual SLAM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DirectSparseOdometry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Direct Sparse Odometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Voxelization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Voxelization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Datasets
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Datasets
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datasets-for-perception" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datasets for Perception
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monocular-vo-by-tum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monocular VO by TUM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#euroc-mav-by-eth-zurich" class="md-nav__link">
+    <span class="md-ellipsis">
+      EuRoC MAV by ETH Zurich
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-custom-dataset-for-visual-odometryslam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a custom dataset for Visual Odometry/SLAM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#treescopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Treescopes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-and-further-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources and Further work
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RobotOperatingSystem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Robot Operating System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Community/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Communities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Datasets</h1>
+
+<h2 id="datasets-for-perception">Datasets for Perception</h2>
+<p>It is always best to use well known benchmark datasets to evaluate and understand perception algorithms. Even when the sensor is not available physically, we can get live time-synchronised data, with the help of bagfiles as well.</p>
+<p>A good example for this is the treescopes dataset. It is an under the canopy forest dataset, taken using UAV’s and mobile platforms. It boasts a very advanced sensor suite and the data has been processed using a LIO method to fuse the inertial and LiDAR data to give an accurate registered pointcloud, and further processed using RangeNet++ for bark and ground plane identification. Another such dataset is the M3ED dataset, which contains data from multiple kinds of sensors like LiDARs, event camera’s, RTK-GPS, IMU and stereo cameras. </p>
+<p>For Visual SLAM and Visual Odometry there are datasets which contain images in frame by frame manner, along with the camera intrinsic. Some of the datasets are Monocular VO by TUM and EuRoC MAV dataset by ETH Zurich. For the testing of DSO, LDSO and SVO, these were the datasets that were being used.</p>
+<h2 id="monocular-vo-by-tum">Monocular VO by TUM</h2>
+<p>Monocular Visual Odometry is a dataset for testing and benchmarking Visual Odometry and Monocular SLAM methods. It contains aboout 50 sequences recorded across different type of environments. The speciality of the dataset is that it provides the photometric calibration of the camera, and also points to a method to photometrically calibrate images. When it comes to direct method, photometric calibration is an absolute game-changer and have proven to increase performance, especially in the case of Direct Sparse Odometry. </p>
+<p>The structure of the dataset provided is as followed:</p>
+<ul>
+<li>images.zip :  Contains the video in a frame by frame JPEG or PNG file</li>
+<li>camera.txt : Contains the intrinsic parameters of the camera, which can be obtained through calibration</li>
+<li>pcalib.txt : Contains a single row with 256 values, mapping [0..255] to the respective irradiance value, i.e. containing the <em>discretized inverse response function</em>.</li>
+<li>times.txt  : Contains exposure times of each frame as given by the sensor</li>
+<li>vignette.png : Contains the vignette as pixel wise attenuation factors. </li>
+<li>groundtruthSync.txt: Contains the time synchronizeed ground truth information for each camera pose, corresponding to the image timestamps.</li>
+</ul>
+<p>A direct photometric calibration method is being shared by the same research group. <a href="https://drive.google.com/file/d/1I6qHwjdz8MiKHd_BqSSIGkKn1UV9v762/view?usp=drive_link">Online Photometric Calibration</a> uses a Levenberg-Marquardt based optimization after modelling the vignetting and response functions. This can be modified either to be run with video sequences or with live camera. Depending on the mode of calibration chosen, we can save the inverse response function and the vignetting factors or can directly wire it to the VO or SLAM algorithm. </p>
+<h2 id="euroc-mav-by-eth-zurich">EuRoC MAV by ETH Zurich</h2>
+<p>The EuRoC dataset includes synchronised timestamped data from a stereo camera system and an IMU (Inertial Measurement Unit) in a variety of demanding outdoor and interior conditions. The structure of the dataset is as follows:</p>
+<ul>
+<li>images.zip A compressed archive of grayscale photos collected by the stereo camera system. The archive usually has two subfolders (left and right) for the left and right camera photos, respectively.</li>
+<li>imuX.txt (multiple files): Text files containing synchronised Inertial Measurement Unit (IMU) data. These files contain measurements such as accelerometer, gyroscope, and sometimes barometer readings at timestamps that match the camera photos.</li>
+<li>groundtruth.txt: A text file holding the ground truth information for each camera pose (position and orientation) during the recording sequence. This information is often delivered at timestamps that are consistent with the image and IMU data.</li>
+</ul>
+<p>Note that some versions might include additional data files, such as calibration files for the camera system or IMU. These files are essential for correcting sensor distortions and ensuring accurate measurements. In the version we used this was not in a usable format for DSO, therefore we had to convert the parameters had to converted to .txt format and with the right distortion parameters. While running it for benchmarking for DSO, only one of the files out of the left and right images were used.  </p>
+<h2 id="creating-a-custom-dataset-for-visual-odometryslam">Creating a custom dataset for Visual Odometry/SLAM</h2>
+<p>Custom dataset can be created in the MonoVO format, which is easier to run with different algorithms. All you need is the video of the environment using a monocular camera. The calibration of the camera is needed for the pose estimation and mapping. The K matrix is considered the geometric calibration of the camera. The K matrix can be obtained by using Zhang's calibration, which can be obtained from the MATLAB tutorial provided. Using the values create the camera.txt files in the format as given by <a href="https://github.com/JakobEngel/dso/blob/2c30ab44b3804d9e507ba9221dbd9f5637491f12/README.md#geometric-calibration-file.">this</a>. </p>
+<p>It is always preferred to have the photometric calibration files as well. These are the pcalib.txt and the vignette.png files. For the algorithm to work with photometric parameters both these files have to be provided. If the exposure times can be found with the timestamp and the frame values, then the <a href="https://github.com/tum-vision/mono_dataset_code">mono-dataset code</a> can be used.</p>
+<p>If not the files can be generated by using the <a href="https://github.com/tum-vision/online_photometric_calibration">online photometric calibration code</a>, just by sending in the camera.txt files. When passing the parameters make sure to send the resolution values, so that the vignette image is in the same resolution as the feed. <a href="https://docs.google.com/document/d/1KuTvh2p6CwSN_qvg2MAlSIXOvKzrUPpUdWphqJ9lsBc/edit?usp=sharing">Document 1.1</a> elaborates on the use of the above. </p>
+<h2 id="treescopes">Treescopes</h2>
+<p>The Treescope dataset, developed by the University of Pennsylvania, provides data for robotic precision agricultural and forestry operations, notably tree counting and mapping. The Treescope dataset seeks to give academics and developers with resources that:</p>
+<ul>
+<li>
+<p>Develop and refine algorithms for robotic tree counting and mapping: The dataset provides high-quality LiDAR data with ground truth labels, enabling researchers to train and evaluate algorithms for automated tree detection and estimate of tree metrics including position, height, and diameter.</p>
+</li>
+<li>
+<p>Advance LiDAR-based SLAM (Simultaneous Localization and Mapping) in agricultural settings: The dataset can be used to create SLAM algorithms that work well in orchards and woods, where typical visual SLAM approaches may fail due to a lack of visual cues.</p>
+</li>
+<li>
+<p>Benchmarking robotic system performance in precision agriculture: By providing a standardised dataset, researchers may evaluate the performance of various robotic platforms and algorithms for tree management activities in agricultural settings.</p>
+</li>
+</ul>
+<p>The dataset can be classified into two categories:</p>
+<ol>
+<li>
+<p>Processed data: This category includes ROS bags (Robot Operating System message format), which contain:</p>
+<ul>
+<li>Ground-truth LiDAR odometry: Precise information about the robot's movement derived from LiDAR data and potentially adjusted with other sensors (IMU, GPS).</li>
+<li>Velocity-corrected point cloud frames are 3D points that reflect the environment collected by the LiDAR sensor and have been corrected for sensor motion to increase accuracy.</li>
+<li>Semantically segmented point clouds: The point cloud data is further classified, with points labelled as being on the ground, tree stems, or in other relevant categories. This segmentation is carried out utilising a trained deep learning network RangeNet++.</li>
+</ul>
+</li>
+<li>
+<p>Raw Data: This category includes the unprocessed sensor data acquired during the recordings.</p>
+<ul>
+<li>ROS bags may contain raw LiDAR data, IMU (Inertial Measurement Unit) data, RGB-D camera data (colour image with depth information).</li>
+<li>Sensor Metadata: Separate files containing information about the sensor models, calibration parameters, and other details needed to analyse the raw sensor data.</li>
+</ul>
+</li>
+</ol>
+<h2 id="resources-and-further-work">Resources and Further work</h2>
+<ol>
+<li>
+<p><a href="https://github.com/youngguncho/awesome-slam-datasets">Awesome SLAM datasets</a> is a github 1. page, which has ordered different datasets that can be used to test SLAM algorithms. It has even ordered datasets based on the environments it provides.</p>
+</li>
+<li>
+<p><a href="https://d-nb.info/1201091020/34">Mapping Quality Evaluation of Monocular SLAM solutions for Micro Aerial Vehicles</a> </p>
+<ol>
+<li><a href="https://github.com/jwangjie/Mapping-ARDrone/tree/master">Implement Instructions for custom dataset with LSD-SLAM, ORB-SLAM2, and LDSO</a></li>
+</ol>
+</li>
+<li>
+<p><a href="https://docs.google.com/document/d/1BPd35Z0O4dz2GUDv9r9lGRElgTcY1jWWGsgtxDiZQb8/edit?usp=sharing">Step by Step Procedure to make the Trajectory Analysis Work</a> will help in setting up a basic comparison and plots for understanding the performance.</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
